@@ -13,8 +13,6 @@
 #  0. You just DO WHAT THE FUCK YOU WANT TO.
 
 #Autoinstall NVIDIA v.1
-
-
 #!/bin/bash
 
 # Ensure the script is run as root
@@ -48,7 +46,7 @@ apt install -y nvidia-driver
 
 # Check if NVIDIA driver installed successfully
 if command -v nvidia-smi &>/dev/null; then
-  echo "NVIDIA driver installed successfully."
+  echo "NVIDIA driver installed successfully. Fuck NVIDIA properly and all that nonsense. "
 else
-  echo "NVIDIA driver installation may have failed. Please dmesg check logs."
+  echo "NVIDIA driver installation may have failed. Check with: dmesg | grep -i nvidia"
 fi
